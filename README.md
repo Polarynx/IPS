@@ -1,9 +1,9 @@
 # Index for Password Strength (IPS)
 
-![Java](https://img.shields.io/badge/Java-JDK_8%2B-orange.svg)
+![C++](https://img.shields.io/badge/C%2B%2B-11%2B-00599C.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-Index for Password Strength (IPS) is a command-line program built in Java that evaluates the strength of a user-provided password using a custom scoring system. The program analyzes multiple security factors and produces both a numerical score and specific feedback on weaknesses.
+Index for Password Strength (IPS) is a command-line program built in C++ that evaluates the strength of a user-provided password using a custom scoring system. The program analyzes multiple security factors and produces both a numerical score and specific feedback on weaknesses.
 
 ---
 
@@ -39,9 +39,9 @@ $$\text{Total Score} = \frac{\text{Basic Score} + \text{Length Score} + \text{Re
 
 ## Technologies Used
 
-- **Language:** Java (JDK 8+)
-- **Standard Libraries:** `java.util.Scanner`, `java.util.ArrayList`, `java.util.List`
-- **Concepts:** Java Collections Framework, input validation, string processing, scoring algorithms, security logic
+- **Language:** C++ (C++11 or later)
+- **Standard Libraries:** `<iostream>`, `<string>`, `<vector>`, `<algorithm>`, `<cmath>`, `<cctype>`
+- **Concepts:** C++ Standard Template Library (STL), input validation, string processing, scoring algorithms, security logic
 
 ---
 
@@ -50,20 +50,25 @@ $$\text{Total Score} = \frac{\text{Basic Score} + \text{Length Score} + \text{Re
 ### Option 1: Run Locally (Command Line)
 
 1. Clone or download this repository.
-2. Compile the Java source file:
+2. Compile the C++ source file using `g++` or `clang++`:
    ```bash
-   javac PasswordStrengthIndex.java
+   g++ -std=c++11 PasswordStrengthIndex.cpp -o PasswordStrengthIndex
    ```
-3. Run the compiled program:
-   ```bash
-   java PasswordStrengthIndex
-   ```
+3. Run the compiled executable:
+   - **Linux / macOS:**
+     ```bash
+     ./PasswordStrengthIndex
+     ```
+   - **Windows:**
+     ```cmd
+     PasswordStrengthIndex.exe
+     ```
 4. Enter a password when prompted to view your strength rating and security feedback.
 
 ### Option 2: Online Compiler
 
-1. Go to the [Programiz Online Java Compiler](https://www.programiz.com/java-programming/online-compiler/).
-2. Copy and paste the contents of `PasswordStrengthIndex.java` into the editor.
+1. Go to the [Programiz Online C++ Compiler](https://www.programiz.com/cpp-programming/online-compiler/).
+2. Copy and paste the contents of `PasswordStrengthIndex.cpp` into the editor.
 3. Click **Run**, then enter a password in the interactive console.
 
 ---
@@ -75,9 +80,9 @@ Welcome to the Index for Password Strength (IPS)!
 
 Enter your password (8-15 characters): P@ssw0rd123
 
-Basic Factor: 100.0/100
-Length Factor: 50.0/100
-Repetition Factor: 75.0/100
+Basic Factor: 100/100
+Length Factor: 50/100
+Repetition Factor: 75/100
 Complexity Factor: 87.5/100
 
 Total Password Strength: 78.13/100
